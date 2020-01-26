@@ -27,14 +27,14 @@ livenessProbe:
     - mcstatus
     - localhost:25565
     - status
-  initialDelaySeconds: 300
+  initialDelaySeconds: 600
   periodSeconds: 5
 readinessProbe:
   command:
     - mcstatus
     - localhost:25565
     - status
-  initialDelaySeconds: 300
+  initialDelaySeconds: 600
   periodSeconds: 5
 minecraftServer:
   # This must be overridden, since we can't accept this for the user.
